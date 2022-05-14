@@ -1,0 +1,24 @@
+input file:
+
+SUM	MACRO	&x, &y, &z
+	MOV	A, &x
+	MOV	R0, &y
+	ADD	A, R0
+	MOV	R0, &z
+	ADD	A, R0
+	MEND
+
+SUBB	MACRO	&p, &q
+	MOV	A, &p
+	MOV	R0, &q
+	SUB	A, R0
+	MEND
+
+	ORG 	0H 
+	MOV 	R1,#25H 
+	MOV 	R2,#34H
+	MOV 	R3,#0 
+	SUM	R3, R2, R1
+	SUBB 	A,12H
+	END
+

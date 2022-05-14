@@ -1,0 +1,18 @@
+input file:
+
+
+
+	ORG 	0H 
+	MOV 	R1,#25H 
+	MOV 	R2,#34H
+	MOV 	R3,#0 
+	MOV	A, R3
+	MOV	R0, R2
+	ADD	A, R0
+	MOV	R0, R1
+	ADD	A, R0
+	MOV	A, A
+	MOV	R0, 12H
+	SUB	A, R0
+	END
+

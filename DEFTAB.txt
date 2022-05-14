@@ -1,0 +1,12 @@
+	MOV	A ?0 
+	MOV	R0 ?1 
+	ADD	A R0 
+	MOV	R0 ?2 
+	ADD	A R0 
+	MEND
+
+	MOV	A ?0 
+	MOV	R0 ?1 
+	SUB	A R0 
+	MEND
+
